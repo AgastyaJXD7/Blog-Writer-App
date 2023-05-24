@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react";
 import { useLogin } from "@pankod/refine-core";
-import { Container, Box } from "@pankod/refine-mui";
+import { Container, Box, Typography,} from "@pankod/refine-mui";
 
 import {yariga} from '../assets' 
 
 import { CredentialResponse } from "../interfaces/google";
+import LoginPageLottie from "assets/LoginPageLottie";
 
 export const Login: React.FC = () => {
   const { mutate: login } = useLogin<CredentialResponse>();
@@ -44,7 +45,7 @@ export const Login: React.FC = () => {
     <Box
       component="div"
       sx={{
-        backgroundColor: '#FCFCFC'
+        backgroundImage: "linear-gradient(to right, #3e8573, #539685, #68a797, #7cb9aa, #91cbbd);"
       }}
     >
       <Container
@@ -63,12 +64,17 @@ export const Login: React.FC = () => {
             justifyContent: "center",
             flexDirection: "column",
             alignItems: "center",
+            backgroundColor: "white",
+            borderRadius: "10px",
           }}
         >
-          <div>
+          <Box mt={4} mb={1}>
+            <Typography fontSize={24} fontWeight={700} color="#11142d" mt={1}>Welcome</Typography>
+     
+            <LoginPageLottie/>
             <img src={yariga} alt="Yariga Logo" />
-          </div>
-          <Box mt={4}>
+          </Box>
+          <Box mt={4} mb={2}>
             <GoogleButton />
           </Box>
         </Box>

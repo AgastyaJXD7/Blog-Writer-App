@@ -178,9 +178,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 py: isNested ? 1.25 : 1,
                 "&.Mui-selected": {
                   "&:hover": {
-                    backgroundColor: isSelected ? '#1e36e8' : "transparent",
+                    backgroundColor: isSelected ? '#5db39d' : "transparent",
                   },
-                  backgroundColor: isSelected ? '#475be8' : "transparent",
+                  backgroundColor: isSelected ? '#80c2b2' : "transparent",
                 },
                 justifyContent: "center",
                 margin: "10px auto",
