@@ -20,7 +20,7 @@ import {
   ChevronLeft,
   ChevronRight,
   MenuRounded,
-  Dashboard,
+  HomeRounded,
 } from "@mui/icons-material";
 import {
   CanAccess,
@@ -251,7 +251,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
               marginRight: "14px"
             }}
           >
-            <Dashboard />
+            <HomeRounded />
           </ListItemIcon>
           <ListItemText
             primary={translate("dashboard.title", "Dashboard")}

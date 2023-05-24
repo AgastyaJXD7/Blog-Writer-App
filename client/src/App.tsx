@@ -34,9 +34,7 @@ import {
 
 import {
   AccountCircleOutlined,
-  ChatBubbleOutline,
   PeopleAltOutlined,
-  StarOutlineRounded,
   VillaOutlined
 } from '@mui/icons-material'
 
@@ -155,19 +153,10 @@ function App() {
             {
               name: "agents",
               list: Agents,
+              options: {label: 'Writers'},
               show: AgentProfile,
               icon: <PeopleAltOutlined />
-            },
-            {
-              name: "reviews",
-              list: Home,
-              icon: <StarOutlineRounded />
-            },
-            {
-              name: "messages",
-              list: Home,
-              icon: <ChatBubbleOutline />
-            },
+            },          
             {
               name: "my-profile",
               list: MyProfile,
