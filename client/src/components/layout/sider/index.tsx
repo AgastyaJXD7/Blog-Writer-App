@@ -412,13 +412,13 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           </Box>
           <Button
             sx={{
-              background: "#475BE8",
+              background: "#80c2b2",
               color: "primary.contrastText",
               textAlign: "center",
               borderRadius: 0,
               borderTop: "1px solid #ffffff1a",
               '&:hover':{
-                background: '#1e36e8'
+                background: '#5db39d'
               }
             }}
             fullWidth

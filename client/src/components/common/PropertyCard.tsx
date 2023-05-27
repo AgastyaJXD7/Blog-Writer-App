@@ -16,7 +16,7 @@ const PropertyCard = ({id, title, location, price, photo}: PropertyCardProps) =>
             <Typography fontSize={14} color="#808191">{location}</Typography>
           </Stack>
         </Stack>
-        <Box px={1.5} py={0.5} borderRadius={1} bgcolor='#dadefa' height='fit-content'><Typography fontSize={12} fontWeight={600} color="#475be8">${price}</Typography></Box>
+        <Box px={1.5} py={0.5} borderRadius={1} bgcolor='#e3f2ee' height='fit-content'><Typography fontSize={12} fontWeight={600} color="#5db39d">${price}</Typography></Box>
       </CardContent>
     </Card>
   )
