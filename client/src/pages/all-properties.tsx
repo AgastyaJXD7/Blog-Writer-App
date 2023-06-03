@@ -1,4 +1,4 @@
-import {Add} from '@mui/icons-material'
+import {Add, CreateRounded} from '@mui/icons-material'
 import { useTable } from '@pankod/refine-core'
 import { Box, Stack, Typography, TextField, Select, MenuItem } from '@pankod/refine-mui'
 import { useNavigate } from '@pankod/refine-react-router-v6'
@@ -64,11 +64,11 @@ const AllProperties = () => {
       </Box>
 
       <Stack direction="row" justifyContent="space-between" alignItems="Center">
-        <CustomButton title="Add Property"
+        <CustomButton title="New Write-up"
                       handleClick={() => navigate('/properties/create')}
                       backgroundColor="#80c2b2"
                       color="#fcfcfc"
-                      icon={<Add />}/>
+                      icon={<CreateRounded />}/>
       </Stack>
       
       <Box mt="20px" sx={{ display: 'flex', flexWrap: 'wrap', gap: 3}}>

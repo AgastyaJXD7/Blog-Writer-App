@@ -34,6 +34,7 @@ import {
 
 import {
   AccountCircleOutlined,
+  ExploreOutlined,
   PeopleAltOutlined,
   VillaOutlined
 } from '@mui/icons-material'
@@ -148,7 +149,8 @@ function App() {
               show: PropertyDetails,
               create: CreateProperty,
               edit: EditProperty,
-              icon: <VillaOutlined />
+              options: {label: 'Explore'},
+              icon: <ExploreOutlined />
             },
             {
               name: "agents",

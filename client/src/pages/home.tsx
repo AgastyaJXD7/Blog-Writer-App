@@ -5,6 +5,8 @@ import { useNavigate } from '@pankod/refine-react-router-v6'
 import { PieChart, PropertyReferrals, TotalRevenue, PropertyCard, TopAgent, CustomButton} from 'components'
 import { ExploreRounded, AccountCircleRounded } from '@mui/icons-material'
 
+import { motion } from 'framer-motion'
+
 const Home = () => {
   
   const navigate = useNavigate()
@@ -37,20 +39,22 @@ const Home = () => {
           <PropertyReferrals/>
   </Stack> */}
     
-    <Box flex={1} borderRadius="15px" padding="20px" bgcolor="#fcfcfc" display="flex" flexDirection="row" justifyContent="space-between" minWidth="100%" mt="25px">
-      <Stack direction="column" gap="10px">
+    <motion.div  initial={{ scale: 0.1 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring", stiffness: 80, damping: 30}}>
+        <Box flex={1} borderRadius="15px" padding="20px" bgcolor="#fcfcfc" display="flex" flexDirection="row" justifyContent="space-between" minWidth="100%" mt="25px">
+          <Stack direction="column" gap="10px">
 
-      <Typography fontSize="60px">Discover Blog App!</Typography>
-      <Typography fontSize="20px" justifyContent="center" alignContent="center">One stop to share all your thoughts</Typography>
+            <Typography fontSize="60px">Discover Blog App!</Typography>
+            <Typography fontSize="20px" justifyContent="center" alignContent="center">One stop to share all your thoughts</Typography>
 
-      <Stack mt="30px" display="flex" flexDirection="row" gap="2rem">
-        <CustomButton title="Explore Now!" handleClick={() => navigate('/properties')} backgroundColor="#80c2b2" color="#fcfcfc" icon={<ExploreRounded />}/>
-        <CustomButton title="My Profile" handleClick={() => navigate('/my-profile')} backgroundColor="#80c2b2" color="#fcfcfc" icon={<AccountCircleRounded />}/>
-      </Stack>
+            <Stack mt="30px" display="flex" flexDirection="row" gap="2rem">
+              <CustomButton title="Explore Now!" handleClick={() => navigate('/properties')} backgroundColor="#80c2b2" color="#fcfcfc" icon={<ExploreRounded />} />
+              <CustomButton title="My Profile" handleClick={() => navigate('/my-profile')} backgroundColor="#80c2b2" color="#fcfcfc" icon={<AccountCircleRounded />} />
+            </Stack>
 
-      </Stack>
-      <HomePageLottie1/>
-    </Box>
+          </Stack>
+          <HomePageLottie1 />
+        </Box>
+      </motion.div>  
 
       <Box flex={1} borderRadius="15px" padding="20px" bgcolor="#fcfcfc" display="flex" flexDirection="column" minWidth="100%" mt="25px">
         <Typography fontSize="18px" fontWeight={600} color="#11142d">Latest Posts</Typography>
